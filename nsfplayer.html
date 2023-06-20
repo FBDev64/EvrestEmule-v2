@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>JavascriptNES</title>
+</head>
+<body>
+  <input id="rom" type="file">
+  <button id="pause">II</button>
+  <button id="reset">↻</button>
+  <button id="prevsong"><</button>
+  <button id="nextsong">></button><br>
+  <canvas id="output"></canvas>
+  <pre id="log"></pre>
+  <p>
+    JavascriptNES by Alex Ashnov © 2022 Alex Ashnov  
+      <a href="index.html">JavascriptNES</a>.<br>
+  </p>
+
+  <script src="lib/zip.js"></script>
+  <script src="lib/inflate.js"></script>
+
+  <script src="nes/cpu.js"></script>
+  <script src="nes/apu.js"></script>
+  <script src="js/nsfmapper.js"></script>
+  <script src="js/nsf.js"></script>
+
+  <script src="js/audio.js"></script>
+  <script src="js/nsfmain.js"></script>
+
+</body>
+</html>
